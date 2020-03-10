@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta property='og:title' content='JM Web Design and Devlopment'>
+  <meta property='og:type' content='website'>
+  <meta property='og:url' content='http://www.johnmeadewebdev.com'>
+  <meta property='og:image' content='http://www.johnmeadewebdev.com/images/og300x224.jpg'>
+  <meta property='fb:app_id' content='268408189848319'>
+  <meta property='og:description' content='JM Web Development offers web desgign and development services. Current work is focused on projects which support the chingu.io platform.'>
+  <meta property='og:image:type' content='image/jpeg'>
+  <meta property='og:image:width' content='300'>
+  <meta property='og:image:height' content='224'>
+  <meta property='og:image:alt' content='Hero image of the JM Web Developer website.'>
+
+  <title>JM | Web Developer | Salt Lake City</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+       emailjs.init('user_MdyesGp5bGNx3JEQPBxOK');
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            emailjs.sendForm('contact_service', 'contact_form', this);
+            resetContactForm();
+        });
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400|Oswald:200,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+
+  <header>
+    <h1>JM</h1>
+    <p>web design and development</p>
+  </header>
+
+  <nav>
+    <ul>
+      <a href='#project-anchor'><li>projects</li></a>
+      <a href='#media-anchor'><li>media</li></ahref='#project-anchor'>
+      <a href='#contact-anchor'><li>contact</li></a>
+    </ul>
+  </nav>
+
+  <main>
+    <section class='section projects' id='project-anchor'>
+      <div class='project'>
+        <div class='image-frame project1'>
+          <img src="./images/bookFinderSnapShot.jpg">
+        </div>
+        <div class='project-description'>
+          <h2>bookFinder</h2>
+          <p>One of several chingu.io pre-work projects; bookFinder is a client-side application that utilizes the Google Books API for queries, and the localStorage API for persistence. <span class='language-span'>HTML, CSS, JavaScript<a href='https://github.com/johnmeade-webdev/bookFinder' target='_blank'><span class='github'></span></a></span></p>
+        </div>
+      </div>
+      <div class='project'>
+        <div class='project-description'>
+          <h2>Google Fonts Clone</h2>
+          <p>This is an exercise I implemented for use in the chingu.io program as pre-work for each potential participant. The project is organized in three tiers, each tier progressing in difficulty.<span class='language-span'>HTML, CSS, JavaScript<a href='https://github.com/johnmeade-webdev/chinguV12_prework' target='_blank'><span class='github'></span></a></span></p>
+        </div>
+        <div class='image-frame project2'>
+          <img src="./images/googleFontsSnapShot.jpg">
+        </div>
+      </div>
+      <div class='project'>
+        <div class='image-frame project1'>
+          <img src="./images/eCalendarSnapShot.jpg">
+        </div>
+        <div class='project-description'>
+          <h2>eCalendar</h2>
+          <p>Another project for chingu.io, eCalendar implements a fully functional calendar with appointments capabilities. Original design of the app UI was by a great developer who also facilitates for chingu.iu, HoneyBee. I had the pleasure of building out the more advanced logic for the app.<span class='language-span'>HTML, CSS, JavaScript</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class='section media' id='media-anchor'>
+
+      <div class='video-display'>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7FVoKpY9_fQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div class='snapshot-display'>
+        <div class='video-snapshot'>
+          <h2>clickFinder</h2>
+          <img src='./images/clickFinderSnippet.jpg'>
+        </div>
+        <div class='video-snapshot'>
+          <h2>Intersection Observer</h2>
+          <img src='./images/intersectionObserverSnippet.jpg'>
+        </div>
+        <div class='video-snapshot'>
+          <h2>Horizontal Parallax</h2>
+          <img src='./images/parallaxSnippet.jpg'>
+        </div>
+      </div>
+
+    </section>
+
+    <section class='section contact' id='contact-anchor'>
+
+      <h2>Contact Me</h2>
+      <form id='contact-form'>
+        <input type='email' placeholder='your@email.here' name='user_email' id='user_email' required>
+        <textarea name='user_message' id='user_message'></textarea>
+        <input type='submit'>
+      </form>
+
+    </section>
+  </main>
+
+  <footer>
+    <div id="social-media-links">
+      <a href='https://www.facebook.com/john.meade.webdev/' target='_blank'>
+        <div class="facebook-icon"></div>
+      </a>
+      <a href='https://www.youtube.com/channel/UC-J69rqEt8L9XPIeGsp6zsw' target='_blank'>
+        <div class="youtube-icon"></div>
+      </a>
+      <a href='https://twitter.com/john_webdev' target='_blank'>
+        <div class="twitter-icon"></div>
+      </a>
+    </div>
+    <div id="copyright">
+      <p>©2019 John Meade</p>
+    </div>
+  </footer>
+  
+  <script src="index.js"></script>
+</body>
+</html>

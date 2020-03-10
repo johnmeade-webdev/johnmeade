@@ -27,7 +27,7 @@ ul, li, header, nav, section, main, p, h1, h2, h3, h4, h5, h6 {
 /* HEADER STYLES */
 
 header {
-  background-image: url('../images/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg');
+  background-image: url('../images/wireframe_hero.jpg');
   background-size: cover;
   background-position: bottom;
   height: 70vh;
@@ -56,7 +56,7 @@ header p {
 /* NAV STYLES */
 
 nav {
-  padding: 3rem 0; 
+  padding: 3rem 0;
 /*   height: 15vh; */
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.60);
 }
@@ -278,11 +278,11 @@ footer {
     padding: 2rem 0;
     margin: 1rem 0;
   }
-  
+
   #social-media-links {
     display: flex;
   }
-  
+
   .facebook-icon, .twitter-icon, .youtube-icon {
     background-size: 2.5rem auto;
     background-repeat: no-repeat;
@@ -290,19 +290,19 @@ footer {
     width: 2.5rem;
     margin: 0 1rem;
   }
-  
+
   .facebook-icon {
     background-image: url('../images/icons/facebook.svg');
   }
-  
+
   .twitter-icon {
     background-image: url('../images/icons/twitter.svg');
   }
-  
+
   .youtube-icon {
     background-image: url('../images/icons/youtube.svg');
   }
-  
+
   #copyright {
     position: absolute;
     left: 0;
@@ -317,7 +317,7 @@ footer {
   nav ul li {
     font-size: 3.5rem;
   }
-  
+
   .project-description {
     font-size: 2rem;
   }
